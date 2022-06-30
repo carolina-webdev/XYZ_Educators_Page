@@ -1,0 +1,57 @@
+<!---------------------------------------------------------->
+<!--- Assignment 1--->  
+<!---  Written by: Carolina Torres Restrepo - 2195431 --->  
+<!--- For “Front-End Web Programming” Section 05807 - Winter 2022 ---> 
+<!---------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>XYZ Educators - Registration</title>
+<link href="XYZEdStylesheet.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!--- Creation of id selector for make the gradiant color ---> 
+<div id="container"> 
+<header>
+  <h1><a href="index.html">XYZ Educators</a></h1>
+</header>
+<nav>
+  <ul>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="Workshops.html">Workshops</a></li> 
+   <li><a href="Registration.html">Registration</a></li>
+  </ul>
+</nav>
+<main>
+    <h2>Reservations at XYZ Education</h2>
+    <h3>Contact Us Today!</h3>
+    <p>Required fields are marked with an asterisk *</p>
+    <form action="/action_page.php">
+    <label for="fname">*First Name:</label>
+    <input type="text" id="myFName" name="myFName" required="required">
+    <label for="lname">*Last Name: </label>
+    <input type="text" id="myLName" name="myLName" required="required">
+    <label for="email">*E-mail: </label>
+    <input type="email" id="myEmail" name="myEmail" required="required">
+    <label for="phone">Phone: </label>
+    <input type="tel" id="myPhone" name="myPhone" maxlength="12">  
+    <label for="comments">*Comments:</label>
+    <textarea id="comments" name="myComments" rows="2" cols="30" required="required"></textarea>
+    <input type="submit"  value="Submit">
+    </form>
+    <span class="fontbold">Contact Information</span><br> 
+    <br>
+    1234 XYZ Educators Road<br>
+    Montreal, CA<br><br>
+    514-123-4567<br><br>
+  </main>
+  <footer>
+Copyright &copy; 2022 NYZ Educators<br>
+<a href = "mailto:carolina@torres.com">carolina@torres.com</a>
+</footer>
+</div>
+</body>
+</html>

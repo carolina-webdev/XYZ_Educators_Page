@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>XYZ Educators - Workshops</title>
+<link href="XYZEdStylesheet.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script type="text/javascript">
+function calculate(){
+  var fee = 0;
+  var Workshop = document.querySelector('input[name="Workshop"]:checked').value;
+  if(Workshop =='Introduction to E-commerce'){
+    fee = 295;
+  }
+  else if(Workshop =='The Future of the Web'){
+    fee = 295;
+
+  }
+  else if(Workshop =='Web Programming'){
+    fee = 395;
+  }
+  else if (Workshop =='Network Security') {
+    fee = 395;
+  }
+  if(document.querySelector('[name="dinner"]:checked') != null) {
+    document.getElementById("fee").setAttribute('value', '$' + (fee + 30));
+  }
+  else {
+    document.getElementById("fee").setAttribute('value', '$' + fee);    
+  }  
+}
+  </script>
+<body>
+<!--- Creation of id selector for make the gradiant color ---> 
+<div id="container"> 
+<header>
+  <h1><a href="index.html">XYZ Educators</a></h1>
+</header>
+<nav>
+  <ul>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="Workshops.html">Workshops</a></li> 
+   <li><a href="Registration.html">Registration</a></li>
+  </ul>
+</nav>
+<!--- Creation of id selector for apply header image changes ---> 
+<div id="mainimg">
+</div>
+<main>
+<h2>Workshops at XYZ Educators</h2>
+<fieldset>
+  <legend>Workshops</legend>
+  <div class="radios">                                                 
+  <input type="radio" id="radio1" name="Workshop" value="Introduction to E-commerce">Introduction to E-commerce<br>
+  <input type="radio" id="radio2" name="Workshop" value="The Future of the Web">The Future of the Web<br>     
+  <input type="radio" id="radio3" name="Workshop" value="Web Programming"> Web Programming<br> 
+  <input type="radio" id="radio4" name="Workshop" value="Network Security"> Network Security      
+  </div>
+  </fieldset>
+<br>
+<div>
+  <input type="checkbox" id="dinner" name="dinner"
+         checked>
+  <label for="dinner">Opening Night Dinner($30)</label>
+</div>
+<br>
+<br>
+<center><button id="button" type="button" name="calculate" onclick="calculate()">Calculate</button></center>
+  <br>
+  <br>
+  Total Fee: <input id="fee" type="text" name="Fee" >
+  </form>
+<center><table>
+  <br>
+  <br>
+<tr>
+  <th>Workshop</th>
+  <th>Fee</th>
+</tr>
+<tr>
+  <td>Introduction to E-Commerce </td>
+<td>$295</td>
+</tr>
+<tr>
+   <td>The Future Of The Web</td>
+<td>$295</td>
+</tr>
+<tr> 
+  <td>Web Programming</td>
+  <td>$395</td>
+</tr>
+<tr> 
+  <td>Network Security</td>
+  <td>$395</td>
+</tr>
+</table></center>
+</div>
+</main>
+<footer>
+Copyright &copy; 2022 NYZ Educators<br>
+<a href = "mailto:carolina@torres.com">carolina@torres.com</a>
+</footer>
+</div>
+</body>
+</html>
+
